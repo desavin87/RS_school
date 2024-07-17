@@ -20,7 +20,13 @@
 .container {
 	width: 1280px;
 	margin: 0 auto;
+}
+
+.container__header {
 	background-color: #211f20;
+}
+.header {
+	margin-bottom: 90px;
 }
 .navigation {
 	display: flex;
@@ -77,7 +83,7 @@ a::after {
 	width: 100%;
 	height: 3px;
 	background-color: #cdcdcd;
-	transition: all 1s ease;
+	transition: all 0.7s ease;
 	transform: scale(0);
 	transform-origin: left;
 }
@@ -88,4 +94,59 @@ a:hover::after {
 
 ul li:not(:first-child) {
 	margin-left: 35px;
+}
+
+.not__only {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 40px;
+}
+.not__only-presentation {
+	max-width: 410px;
+}
+.presentation {
+	display: flex;
+	flex-direction: column;
+	font-family: "Georgia", sans-serif;
+	font-weight: 400;
+}
+.presentation__title {
+	font-weight: 400;
+	font-size: 44px;
+	line-height: 130%;
+	margin-bottom: 40px;
+	color: #fff;
+}
+.presentation__text {
+	font-family: "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 160%;
+	margin-bottom: 40px;
+	color: #cdcdcd;
+}
+.presentation__btn {
+	display: inline-block;
+	font-family: "Georgia", sans-serif;
+	font-size: 17px;
+	padding: 15px 45px;
+	width: 207px;
+	height: 52px;
+	border: none;
+	border-radius: 100px;
+	background-color: #f1cdb3;
+	color: #292929;
+	cursor: pointer;
+	transition: all 0.7s ease;
+}
+
+.presentation__btn:hover {
+	transform: scale(1.2);
+}
+
+.not__only-img {
+	flex: 0 0 58.333%;
+}
+
+.not__only-image {
+	display: block;
 }
