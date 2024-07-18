@@ -150,3 +150,121 @@ ul li:not(:first-child) {
 .not__only-image {
 	display: block;
 }
+
+.about {
+	display: flex;
+	justify-content: center;
+	padding-top: 90px;
+	padding: 90px 0px;
+}
+
+.about__first-column,
+.about__second-columm {
+	flex: 0 0 50%;
+}
+
+.about__first-column {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 120px;
+}
+
+.about-img {
+	display: block;
+	max-width: 300px;
+}
+
+.about__second-columm {
+}
+
+.about__wrapper {
+	max-width: 430px;
+}
+
+.about__title {
+	font-family: "Georgia", sans-serif;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	color: #545454;
+	margin-bottom: 20px;
+}
+
+.about__text {
+	font-family: "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 160%;
+}
+
+.about__text--first {
+	margin-bottom: 20px;
+}
+
+.our-friends {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 80px;
+	background-color: #f6f6f6;
+}
+.our-friends__title {
+	max-width: 400px;
+	font-family: "Georgia", sans-serif;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	text-align: center;
+	color: #545454;
+	margin-bottom: 60px;
+}
+.slider__container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.slider {
+	display: flex;
+	margin-bottom: 60px;
+}
+.slider__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 9px;
+	padding: 30px 35px;
+	width: 270px;
+	height: 435px;
+	background-color: #fafafa;
+	margin: 0px 45px;
+}
+
+.slider__item-img {
+	width: 270px;
+	height: 270px;
+}
+.slider__item-title {
+	font-family: "Georgia", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 0.06em;
+	color: #545454;
+}
+.slider__item-btn {
+	font-weight: 400;
+	font-size: 17px;
+	letter-spacing: 0.06em;
+	width: 187px;
+	height: 52px;
+	border-radius: 100px;
+	border: 2px solid #f1cdb3;
+	background-color: #fafafa;
+}
+.slider-btn {
+	display: none;
+}
+.our-friends__btn {
+}
