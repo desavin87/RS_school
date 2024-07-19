@@ -375,3 +375,23 @@ ul li:not(:first-child) {
 	line-height: 115%;
 	letter-spacing: 0.06em;
 }
+
+.in-addition {
+	display: flex;
+	padding: 80px 0px 100px 0px;
+}
+.in-addition__first-column {
+	flex: 0 0 50%;
+}
+.in-addition__img {
+}
+.in-addition__second-column {
+}
+.in-addition__title {
+}
+.in-addition__requisites {
+}
+.in-addition__credit-card {
+}
+.in-addition__description {
+}
