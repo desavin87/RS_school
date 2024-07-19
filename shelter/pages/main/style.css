@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	box-sizing: border-box;
+	transition: all 0.7s ease;
 }
 
 @font-face {
@@ -15,6 +16,10 @@
 	font-style: normal;
 	font-weight: 400;
 	src: url("../../fonts/arial.ttf") format("ttf");
+}
+
+body {
+	background-color: #fff;
 }
 
 .container {
@@ -206,7 +211,7 @@ ul li:not(:first-child) {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 80px;
+	padding: 80px 0px 115px 0px;
 	background-color: #f6f6f6;
 }
 .our-friends__title {
@@ -226,10 +231,12 @@ ul li:not(:first-child) {
 	width: 100%;
 }
 .slider {
+	position: relative;
 	display: flex;
 	margin-bottom: 60px;
 }
 .slider__item {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -262,9 +269,109 @@ ul li:not(:first-child) {
 	border-radius: 100px;
 	border: 2px solid #f1cdb3;
 	background-color: #fafafa;
+	cursor: pointer;
+	transition: all 0.7s ease;
 }
+
+.slider__item-btn:hover {
+	background-color: #f1cdb3;
+}
+
+.slider__item-btn::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 .slider-btn {
-	display: none;
+	width: 52px;
+	height: 52px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #f1cdb3;
+	border-radius: 100%;
+	cursor: pointer;
+	background-color: #fafafa;
 }
+
+.slider-btn:hover {
+	background-color: #f1cdb3;
+}
+
+.slider-btn--previous {
+	position: absolute;
+	left: -45px;
+	top: 180px;
+}
+
+.slider-btn--next {
+	position: absolute;
+	right: -45px;
+	top: 180px;
+}
+
 .our-friends__btn {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Georgia", sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	letter-spacing: 0.06em;
+	border-radius: 100px;
+	padding: 15px 45px;
+	/* width: 261px;
+	height: 52px; */
+	background-color: #f1cdb3;
+	border: 2px solid #f1cdb3;
+}
+
+.our-friends__btn:hover {
+	background-color: #fafafa;
+}
+
+.help {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Georgia", sans-serif;
+	padding: 80px 127px 100px 127px;
+}
+.help__title {
+	max-width: 308px;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	text-align: center;
+	color: #545454;
+	margin-bottom: 60px;
+}
+.help__type {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.help__type-item {
+	flex: 1 0 20%;
+}
+.help__type-item:first-child {
+	margin-bottom: 55px;
+}
+.item-type {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.item-type__text {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 115%;
+	letter-spacing: 0.06em;
 }
