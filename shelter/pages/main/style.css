@@ -4,6 +4,10 @@
 	transition: all 0.7s ease;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 @font-face {
 	font-family: "Roboto";
 	font-style: normal;
@@ -41,7 +45,8 @@ body {
 }
 .navigation__logo {
 }
-.logo {
+.logo a {
+	text-decoration: none;
 }
 .logo__title {
 	font-family: "Georgia", sans-serif;
@@ -73,14 +78,15 @@ body {
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 160%;
-	a {
-		position: relative;
-		color: #cdcdcd;
-		text-decoration: none;
-	}
 }
 
-a::after {
+.list__item a {
+	position: relative;
+	color: #cdcdcd;
+	text-decoration: none;
+}
+
+.list__item a::after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -107,15 +113,17 @@ ul li:not(:first-child) {
 	padding: 0 40px;
 }
 .not__only-presentation {
-	max-width: 410px;
+	max-width: 470px;
 }
 .presentation {
 	display: flex;
 	flex-direction: column;
 	font-family: "Georgia", sans-serif;
 	font-weight: 400;
+	padding-top: 160px;
 }
 .presentation__title {
+	max-width: 410px;
 	font-weight: 400;
 	font-size: 44px;
 	line-height: 130%;
@@ -141,6 +149,7 @@ ul li:not(:first-child) {
 	background-color: #f1cdb3;
 	color: #292929;
 	cursor: pointer;
+	text-decoration: none;
 	transition: all 0.7s ease;
 }
 
@@ -204,6 +213,7 @@ ul li:not(:first-child) {
 }
 
 .about__text--first {
+	line-height: 180%;
 	margin-bottom: 20px;
 }
 
@@ -242,7 +252,7 @@ ul li:not(:first-child) {
 	justify-content: space-between;
 	align-items: center;
 	border-radius: 9px;
-	padding: 30px 35px;
+	padding: 10px 35px 30px 35px;
 	width: 270px;
 	height: 435px;
 	background-color: #fafafa;
@@ -261,6 +271,7 @@ ul li:not(:first-child) {
 	color: #545454;
 }
 .slider__item-btn {
+	font-family: "Georgia", sans-serif;
 	font-weight: 400;
 	font-size: 17px;
 	letter-spacing: 0.06em;
@@ -340,10 +351,10 @@ ul li:not(:first-child) {
 	flex-direction: column;
 	align-items: center;
 	font-family: "Georgia", sans-serif;
-	padding: 80px 127px 100px 127px;
+	padding: 65px 127px 100px 127px;
 }
 .help__title {
-	max-width: 308px;
+	max-width: 330px;
 	font-weight: 400;
 	font-size: 35px;
 	line-height: 130%;
@@ -372,28 +383,37 @@ ul li:not(:first-child) {
 .item-type__text {
 	font-weight: 400;
 	font-size: 20px;
-	line-height: 115%;
 	letter-spacing: 0.06em;
+	margin-top: 23px;
 }
 
 .in-addition {
 	display: flex;
-	padding: 80px 0px 100px 0px;
+	padding: 90px 0px 100px 0px;
 	font-family: "Georgia", sans-serif;
 }
 .in-addition__first-column {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	flex: 0 0 50%;
+	flex: 0 0 53%;
 }
 .in-addition__img {
 	max-width: 505px;
 }
 .in-addition__second-column {
-	padding-left: 30px;
+	padding-left: 35px;
 	color: #545454;
 }
+
+.in-addition__second-column a {
+	display: block;
+}
+
+.in-addition__second-column a:hover {
+	transform: scale(1.1);
+}
+
 .in-addition__title {
 	max-width: 300px;
 	font-weight: 400;
@@ -434,10 +454,11 @@ ul li:not(:first-child) {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	padding-top: 15px;
 }
 .column-1 {
 	max-width: 280px;
-	margin-bottom: 60px;
+	margin-bottom: 80px;
 }
 .column__title {
 	font-weight: 400;
@@ -445,10 +466,10 @@ ul li:not(:first-child) {
 	line-height: 120%;
 	letter-spacing: 0.06em;
 	color: #fff;
-	margin-bottom: 35px;
 }
 
 .link-footer {
+	position: relative;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 115%;
@@ -464,12 +485,27 @@ ul li:not(:first-child) {
 	text-decoration: none;
 	color: #f1cdb3;
 }
+
+.link-footer a::before {
+	content: url(../../assets/icons/icon-marker.svg);
+	position: absolute;
+	left: 5px;
+	top: 6px;
+}
+
+.link-footer__2 a::before {
+	content: url(../../assets/icons/icon-marker.svg);
+	position: absolute;
+	left: 5px;
+	top: -8px;
+}
+
 .column__email-link {
 }
 .column-2 {
 	max-width: 313px;
-	margin-bottom: 60px;
-	align-items: flex-end;
+	margin-bottom: 80px;
+	align-items: flex-start;
 }
 .column__location-link {
 }
@@ -479,4 +515,18 @@ ul li:not(:first-child) {
 
 .column-3 img {
 	display: block;
+}
+
+.column__email-link a::before {
+	content: url(../../assets/icons/icon-email.svg);
+	position: absolute;
+	left: 5px;
+	top: -3px;
+}
+
+.column__tel-link a::before {
+	content: url(../../assets/icons/icon-phone.svg);
+	position: absolute;
+	left: 5px;
+	top: -3px;
 }

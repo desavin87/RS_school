@@ -15,15 +15,17 @@
 			<header class="header">
 				<div class="navigation">
 					<div class="navigation__logo logo">
-						<h1 class="logo__title">Cozy House</h1>
+						<a href="#">
+							<h1 class="logo__title">Cozy House</h1>
+						</a>
 						<p class="logo__description">Shelter for pets in Boston</p>
 					</div>
 					<nav class="navigation__list">
 						<ul class="list">
 							<li class="list__item"><a href="#">About the shelter</a></li>
 							<li class="list__item"><a href="#">Our pets</a></li>
-							<li class="list__item"><a href="#">Help the shelter</a></li>
-							<li class="list__item"><a href="#">Contacts</a></li>
+							<li class="list__item"><a href="#help">Help the shelter</a></li>
+							<li class="list__item"><a href="#contacts">Contacts</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -34,7 +36,8 @@
 					<p class="presentation__text">We offer to give a chance to a little and nice puppy with an extremely wide
 						and
 						open heart. He or she will love you more than anybody else in the world, you will see!</p>
-					<button type="button" class="presentation__btn">Make a friend</button>
+					<!-- <button type="button" class="presentation__btn">Make a friend</button> -->
+					<a href="#our-friends" class="presentation__btn">Make a friend</a>
 				</div>
 				<div class="not__only-img">
 					<img class="not__only-image" src="../../assets/img/start-screen-puppy.png" alt="puppy">
@@ -61,8 +64,8 @@
 				</div>
 			</div>
 		</section>
-		<section class="our-friends">
-			<h2 class="our-friends__title">Our friends who
+		<section class="our-friends" id="our-friends">
+			<h2 class="our-friends__title">Our friends who<br>
 				are looking for a house</h2>
 			<div class="slider__container">
 				<div class="slider">
@@ -72,13 +75,13 @@
 						<button class="slider__item-btn" type="button">Learn more</button>
 					</div>
 					<div class="slider__item">
-						<img src="../../assets/img/pets-katrine.png" alt="katrine">
-						<h3 class="slider__item-title">Katrine</h3>
+						<img src="../../assets/img/pets-jennifer.png" alt="Jennifer">
+						<h3 class="slider__item-title">Jennifer</h3>
 						<button class="slider__item-btn" type="button">Learn more</button>
 					</div>
 					<div class="slider__item">
-						<img class="slider__item-img" src="../../assets/img/pets-katrine.png" alt="katrine">
-						<h3 class="slider__item-title">Katrine</h3>
+						<img class="slider__item-img" src="../../assets/img/pets-woody.png" alt="Woody">
+						<h3 class="slider__item-title">Woody</h3>
 						<button class="slider__item-btn" type="button">Learn more</button>
 					</div>
 					<button class="slider-btn slider-btn--previous"><svg width="14" height="6" viewBox="0 0 14 6" fill="none"
@@ -95,7 +98,7 @@
 			</div>
 			<button class="our-friends__btn" type="button">Get to know the rest</button>
 		</section>
-		<section class="help">
+		<section class="help" id="help">
 			<h2 class="help__title">How you can help
 				our shelter</h2>
 			<div class="help__type">
@@ -233,7 +236,7 @@
 							d="M14.121 29.6092C14.1058 29.5342 14.0835 29.4604 14.0542 29.3889C14.0249 29.3186 13.9886 29.2506 13.9464 29.1873C13.9038 29.1231 13.8547 29.0634 13.7999 29.0092C13.746 28.9553 13.6862 28.9061 13.6218 28.8627C13.5585 28.8205 13.4905 28.7854 13.4201 28.7561C13.3495 28.7265 13.2761 28.7041 13.201 28.6893C13.0498 28.6588 12.8941 28.6588 12.7429 28.6893C12.6678 28.7033 12.5939 28.7268 12.5237 28.7561C12.4523 28.7854 12.3843 28.8205 12.321 28.8627C12.2566 28.9061 12.1968 28.9553 12.1429 29.0092C12.089 29.0631 12.0398 29.1229 11.9976 29.1873C11.9554 29.2506 11.9191 29.3186 11.8898 29.3889C11.8605 29.4604 11.8382 29.5342 11.823 29.6092C11.8077 29.6842 11.7995 29.7615 11.7995 29.8377C11.8003 29.9914 11.8309 30.1434 11.8898 30.2854C11.9191 30.3568 11.9554 30.4248 11.9976 30.4881C12.0398 30.5525 12.089 30.6122 12.1429 30.6662C12.1968 30.7201 12.2566 30.7693 12.321 30.8115C12.3843 30.8549 12.4523 30.8901 12.5237 30.9193C12.5941 30.9486 12.6678 30.9721 12.7429 30.9861C12.8179 31.0014 12.8952 31.0096 12.9713 31.0096C13.0475 31.0096 13.1249 31.0014 13.201 30.9861C13.2761 30.9713 13.3495 30.9489 13.4201 30.9193C13.4909 30.8905 13.5585 30.8543 13.6218 30.8115C13.686 30.7693 13.7457 30.7206 13.7999 30.6662C13.9092 30.5575 13.9957 30.428 14.0542 30.2854C14.1134 30.1436 14.1436 29.9914 14.1432 29.8377C14.1432 29.7614 14.1361 29.6842 14.121 29.6092Z"
 							fill="#F1CDB3" />
 					</svg>
-					<p class="help__type-item item-type__text">Collars &#47 leashes</p>
+					<p class="help__type-item item-type__text">Collars &#47;leashes</p>
 				</div>
 				<div class="help__type-item item-type">
 					<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -269,18 +272,19 @@
 			</div>
 			<div class="in-addition__second-column">
 				<h2 class="in-addition__title">You can also make a donation</h2>
-				<p class="in-addition__requisites">Name of the bank &#47 Type of bank account</p>
-				<img class="in-addition__credit-card" src="../../assets/img/Credit card.png" alt="creditCard">
+				<p class="in-addition__requisites">Name of the bank &#47;Type of bank account</p>
+				<a href="#"><img class="in-addition__credit-card" src="../../assets/img/Credit-card.png"
+						alt="creditCard"></a>
 				<p class="in-addition__description">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing
 					elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et
 					vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
 			</div>
 		</section>
-		<footer class="footer-main">
+		<footer class="footer-main" id="contacts">
 			<div class="column column-1">
 				<h2 class="column__title">For questions and suggestions</h2>
 				<p class="column__email-link link-footer"><a href="mailto:email@shelter.com">email@shelter.com</a></p>
-				<p class="column__email-link link-footer"><a href="tel:+136745677554">+13 674 567 75 54</a></p>
+				<p class="column__tel-link link-footer"><a href="tel:+136745677554">+13 674 567 75 54</a></p>
 			</div>
 			<div class="column column-2">
 				<h2 class="column__title">We are waiting for your visit</h2>
@@ -289,8 +293,8 @@
 						Central Street,
 						Boston
 						(entrance from the store)</a></p>
-				<p class="column__location-link link-footer"><a href="https://maps.app.goo.gl/rEdn5VQtJ6v6xprL9"
-						target="_blank">18
+				<p class="column__location-link link-footer link-footer__2"><a
+						href="https://maps.app.goo.gl/rEdn5VQtJ6v6xprL9" target="_blank">18
 						South Park,
 						London</a>
 				</p>
