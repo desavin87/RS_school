@@ -12,14 +12,14 @@ html {
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
-	src: url("../../fonts/georgia.ttf") format("ttf");
+	src: url("shelter/fonts/georgia.ttf") format("ttf");
 }
 
 @font-face {
 	font-family: "Arial";
 	font-style: normal;
 	font-weight: 400;
-	src: url("../../fonts/arial.ttf") format("ttf");
+	src: url("shelter/fonts/arial.ttf") format("ttf");
 }
 
 body {
@@ -491,14 +491,14 @@ ul li:not(:first-child) {
 }
 
 .link-footer a::before {
-	content: url(../../assets/icons/icon-marker.svg);
+	content: url(shelter/assets/icons/icon-marker.svg);
 	position: absolute;
 	left: 5px;
 	top: 6px;
 }
 
 .link-footer__2 a::before {
-	content: url(../../assets/icons/icon-marker.svg);
+	content: url(shelter/assets/icons/icon-marker.svg);
 	position: absolute;
 	left: 5px;
 	top: -8px;
@@ -522,14 +522,14 @@ ul li:not(:first-child) {
 }
 
 .column__email-link a::before {
-	content: url(../../assets/icons/icon-email.svg);
+	content: url(shelter/assets/icons/icon-email.svg);
 	position: absolute;
 	left: 5px;
 	top: -3px;
 }
 
 .column__tel-link a::before {
-	content: url(../../assets/icons/icon-phone.svg);
+	content: url(shelter/assets/icons/icon-phone.svg);
 	position: absolute;
 	left: 5px;
 	top: -3px;
