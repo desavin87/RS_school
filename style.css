@@ -29,10 +29,16 @@ body {
 .container {
 	width: 1280px;
 	margin: 0 auto;
+	@media (max-width: 768px) {
+		width: 100%;
+	}
 }
 
 .container__header {
 	background-color: #211f20;
+	@media (max-width: 768px) {
+		padding: 0px 30px;
+	}
 }
 .header {
 	margin-bottom: 90px;
@@ -42,6 +48,9 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 30px 40px 0px 40px;
+	@media (max-width: 768px) {
+		padding: 30px 0px 0px 0px;
+	}
 }
 .navigation__logo {
 }
@@ -115,6 +124,11 @@ ul li:not(:first-child) {
 	display: flex;
 	justify-content: space-between;
 	padding: 0 40px;
+	@media (max-width: 768px) {
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+	}
 }
 .not__only-presentation {
 	max-width: 470px;
@@ -125,6 +139,9 @@ ul li:not(:first-child) {
 	font-family: "Georgia", sans-serif;
 	font-weight: 400;
 	padding-top: 160px;
+	@media (max-width: 768px) {
+		padding: 60px 0px 100px 0px;
+	}
 }
 .presentation__title {
 	max-width: 410px;
@@ -155,6 +172,9 @@ ul li:not(:first-child) {
 	cursor: pointer;
 	text-decoration: none;
 	transition: all 0.7s ease;
+	@media (max-width: 768px) {
+		align-self: center;
+	}
 }
 
 .presentation__btn:hover {
@@ -163,10 +183,16 @@ ul li:not(:first-child) {
 
 .not__only-img {
 	flex: 0 0 58.333%;
+	@media (max-width: 768px) {
+		flex: 0 1 74.09%;
+		align-self: flex-end;
+		max-width: 569px;
+	}
 }
 
 .not__only-image {
 	display: block;
+	max-width: 569px;
 }
 
 .about {
@@ -174,6 +200,11 @@ ul li:not(:first-child) {
 	justify-content: center;
 	padding-top: 90px;
 	padding: 90px 0px;
+	@media (max-width: 768px) {
+		flex-direction: column;
+		align-items: center;
+		padding: 80px 0px 100px 0px;
+	}
 }
 
 .about__first-column,
@@ -185,6 +216,10 @@ ul li:not(:first-child) {
 	display: flex;
 	justify-content: flex-end;
 	padding-right: 120px;
+	@media (max-width: 768px) {
+		padding-right: 0px;
+		order: 2;
+	}
 }
 
 .about-img {
@@ -193,6 +228,10 @@ ul li:not(:first-child) {
 }
 
 .about__second-columm {
+	@media (max-width: 768px) {
+		order: 1;
+		margin-bottom: 80px;
+	}
 }
 
 .about__wrapper {
