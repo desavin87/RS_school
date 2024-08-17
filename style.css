@@ -320,6 +320,9 @@ ul li:not(:first-child) {
 	@media (max-width: 768px) {
 		padding-bottom: 100px;
 	}
+	@media (max-width: 320px) {
+		padding: 40px 0px 0px 0px;
+	}
 }
 .our-friends__title {
 	max-width: 400px;
@@ -331,6 +334,10 @@ ul li:not(:first-child) {
 	text-align: center;
 	color: #545454;
 	margin-bottom: 60px;
+	@media (max-width: 320px) {
+		font-size: 25px;
+		margin-bottom: 40px;
+	}
 }
 .slider__container {
 	display: flex;
@@ -340,7 +347,12 @@ ul li:not(:first-child) {
 .slider {
 	position: relative;
 	display: flex;
+	flex-direction: column;
 	margin-bottom: 60px;
+	@media (max-width: 320px) {
+		align-items: center;
+		margin-bottom: 0;
+	}
 }
 .slider__item {
 	position: relative;
@@ -369,11 +381,18 @@ ul li:not(:first-child) {
 	@media (max-width: 768px) {
 		margin-right: 20px;
 	}
+	@media (max-width: 320px) {
+		margin: 0;
+		margin-bottom: 114px;
+	}
 }
 
 .item--2 {
 	@media (max-width: 768px) {
 		margin-left: 20px;
+	}
+	@media (max-width: 320px) {
+		display: none;
 	}
 }
 
@@ -435,12 +454,20 @@ ul li:not(:first-child) {
 	position: absolute;
 	left: -65px;
 	top: 180px;
+	@media (max-width: 320px) {
+		top: 460px;
+		left: 25px;
+	}
 }
 
 .slider-btn--next {
 	position: absolute;
 	right: -65px;
 	top: 180px;
+	@media (max-width: 320px) {
+		top: 460px;
+		right: 25px;
+	}
 }
 
 .our-friends__btn {
@@ -458,6 +485,9 @@ ul li:not(:first-child) {
 	height: 52px; */
 	background-color: #f1cdb3;
 	border: 2px solid #f1cdb3;
+	@media (max-width: 320px) {
+		margin-bottom: 40px;
+	}
 }
 
 .our-friends__btn:hover {
@@ -473,6 +503,9 @@ ul li:not(:first-child) {
 	@media (max-width: 768px) {
 		padding: 80px 70px 45px 70px;
 	}
+	@media (max-width: 320px) {
+		padding: 40px 0px 0px 0px;
+	}
 }
 .help__title {
 	max-width: 330px;
@@ -483,6 +516,10 @@ ul li:not(:first-child) {
 	text-align: center;
 	color: #545454;
 	margin-bottom: 60px;
+	@media (max-width: 320px) {
+		max-width: 250px;
+		font-size: 25px;
+	}
 }
 .help__type {
 	display: flex;
@@ -493,6 +530,9 @@ ul li:not(:first-child) {
 	flex: 1 0 20%;
 	@media (max-width: 768px) {
 		flex: 1 0 33.33%;
+	}
+	@media (max-width: 320px) {
+		flex: 1 0 130px;
 	}
 }
 .help__type-item:first-child {
@@ -508,6 +548,9 @@ ul li:not(:first-child) {
 	justify-content: center;
 	@media (max-width: 768px) {
 		margin-bottom: 55px;
+	}
+	@media (max-width: 320px) {
+		margin-bottom: 0;
 	}
 }
 .item-type__text {
